@@ -1,0 +1,84 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.3.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="4893a0f1-cc66-4719-a6cc-1b4eee0eb415" data-root-id="1358"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1476">
+          {"0f2d3e0b-3e28-4571-985a-94dacb9edb5a":{"roots":{"references":[{"attributes":{},"id":"1381","type":"ResetTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1392","type":"Circle"},{"attributes":{"callback":null,"data":{"x":{"__ndarray__":"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","dtype":"float64","shape":[200]},"y":{"__ndarray__":"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","dtype":"float64","shape":[200]}},"selected":{"id":"1403","type":"Selection"},"selection_policy":{"id":"1402","type":"UnionRenderers"}},"id":"1390","type":"ColumnDataSource"},{"attributes":{},"id":"1365","type":"LinearScale"},{"attributes":{},"id":"1373","type":"BasicTicker"},{"attributes":{"dimension":1,"ticker":{"id":"1373","type":"BasicTicker"}},"id":"1376","type":"Grid"},{"attributes":{"axis_label":"x","formatter":{"id":"1400","type":"BasicTickFormatter"},"ticker":{"id":"1368","type":"BasicTicker"}},"id":"1367","type":"LinearAxis"},{"attributes":{},"id":"1368","type":"BasicTicker"},{"attributes":{},"id":"1377","type":"PanTool"},{"attributes":{},"id":"1400","type":"BasicTickFormatter"},{"attributes":{"axis_label":"cos(y)","formatter":{"id":"1398","type":"BasicTickFormatter"},"ticker":{"id":"1373","type":"BasicTicker"}},"id":"1372","type":"LinearAxis"},{"attributes":{},"id":"1380","type":"SaveTool"},{"attributes":{},"id":"1378","type":"WheelZoomTool"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1401","type":"BoxAnnotation"},{"attributes":{"callback":null},"id":"1361","type":"DataRange1d"},{"attributes":{},"id":"1363","type":"LinearScale"},{"attributes":{"text":""},"id":"1396","type":"Title"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1377","type":"PanTool"},{"id":"1378","type":"WheelZoomTool"},{"id":"1379","type":"BoxZoomTool"},{"id":"1380","type":"SaveTool"},{"id":"1381","type":"ResetTool"},{"id":"1382","type":"HelpTool"}]},"id":"1383","type":"Toolbar"},{"attributes":{},"id":"1402","type":"UnionRenderers"},{"attributes":{},"id":"1398","type":"BasicTickFormatter"},{"attributes":{},"id":"1403","type":"Selection"},{"attributes":{"callback":null},"id":"1359","type":"DataRange1d"},{"attributes":{},"id":"1382","type":"HelpTool"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1391","type":"Circle"},{"attributes":{"ticker":{"id":"1368","type":"BasicTicker"}},"id":"1371","type":"Grid"},{"attributes":{"source":{"id":"1390","type":"ColumnDataSource"}},"id":"1394","type":"CDSView"},{"attributes":{"overlay":{"id":"1401","type":"BoxAnnotation"}},"id":"1379","type":"BoxZoomTool"},{"attributes":{"data_source":{"id":"1390","type":"ColumnDataSource"},"glyph":{"id":"1391","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1392","type":"Circle"},"selection_glyph":null,"view":{"id":"1394","type":"CDSView"}},"id":"1393","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"1367","type":"LinearAxis"}],"center":[{"id":"1371","type":"Grid"},{"id":"1376","type":"Grid"}],"left":[{"id":"1372","type":"LinearAxis"}],"renderers":[{"id":"1393","type":"GlyphRenderer"}],"title":{"id":"1396","type":"Title"},"toolbar":{"id":"1383","type":"Toolbar"},"x_range":{"id":"1359","type":"DataRange1d"},"x_scale":{"id":"1363","type":"LinearScale"},"y_range":{"id":"1361","type":"DataRange1d"},"y_scale":{"id":"1365","type":"LinearScale"}},"id":"1358","subtype":"Figure","type":"Plot"}],"root_ids":["1358"]},"title":"Bokeh Application","version":"1.3.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1476').textContent;
+                  var render_items = [{"docid":"0f2d3e0b-3e28-4571-985a-94dacb9edb5a","roots":{"1358":"4893a0f1-cc66-4719-a6cc-1b4eee0eb415"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
